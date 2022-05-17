@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.universe {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #05142a;
+}
+
+.universe .sun {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: -32px -5px 150px 36px rgba(230, 95, 19, 0.82);
+          box-shadow: -32px -5px 150px 36px rgba(230, 95, 19, 0.82);
+  background: -webkit-gradient(linear, left top, right top, from(#bb1604), to(#f8b304));
+  background: linear-gradient(to right, #bb1604, #f8b304);
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation-name: Anisun;
+          animation-name: Anisun;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.universe .mercury {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#5614b0), to(#dbd65c));
+  background: linear-gradient(to right, #5614b0, #dbd65c);
+  -webkit-animation: aniMercury;
+          animation: aniMercury;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  left: 50%;
+  top: 50%;
+  -webkit-box-shadow: -32px -5px 150px 6px rgba(230, 95, 19, 0.82);
+          box-shadow: -32px -5px 150px 6px rgba(230, 95, 19, 0.82);
+}
+
+.universe .venus {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#29e0d7), to(#78ffd6));
+  background: linear-gradient(to right, #29e0d7, #78ffd6);
+  -webkit-animation: aniVenus;
+          animation: aniVenus;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-box-shadow: -32px -5px 150px 6px #b4eae7;
+          box-shadow: -32px -5px 150px 6px #b4eae7;
+}
+
+.universe .earth {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#55d370), to(#0575e6));
+  background: linear-gradient(to right, #55d370, #0575e6);
+  -webkit-animation: aniEarth;
+          animation: aniEarth;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-box-shadow: -32px -5px 150px 6px rgba(55, 250, 198, 0.981);
+          box-shadow: -32px -5px 150px 6px rgba(55, 250, 198, 0.981);
+}
+
+.universe .saturn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#9c5f14), to(#585237));
+  background: linear-gradient(to right, #9c5f14, #585237);
+  -webkit-animation: aniSaturn;
+          animation: aniSaturn;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-box-shadow: -32px -5px 150px 6px rgba(226, 218, 62, 0.981);
+          box-shadow: -32px -5px 150px 6px rgba(226, 218, 62, 0.981);
+}
+
+@-webkit-keyframes Anisun {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes Anisun {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes aniMercury {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(-180px) rotate(0deg);
+            transform: rotate(0deg) translateX(-180px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translateX(-180px) rotate(-360deg);
+            transform: rotate(360deg) translateX(-180px) rotate(-360deg);
+  }
+}
+
+@keyframes aniMercury {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(-180px) rotate(0deg);
+            transform: rotate(0deg) translateX(-180px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translateX(-180px) rotate(-360deg);
+            transform: rotate(360deg) translateX(-180px) rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes aniVenus {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(-225px) rotate(0deg);
+            transform: rotate(0deg) translateX(-225px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translateX(-225px) rotate(-360deg);
+            transform: rotate(360deg) translateX(-225px) rotate(-360deg);
+  }
+}
+
+@keyframes aniVenus {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(-225px) rotate(0deg);
+            transform: rotate(0deg) translateX(-225px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translateX(-225px) rotate(-360deg);
+            transform: rotate(360deg) translateX(-225px) rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes aniEarth {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-280px) rotate(0deg);
+            transform: rotate(0deg) translate(-280px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) translate(-280px) rotate(360deg);
+            transform: rotate(-360deg) translate(-280px) rotate(360deg);
+  }
+}
+
+@keyframes aniEarth {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-280px) rotate(0deg);
+            transform: rotate(0deg) translate(-280px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) translate(-280px) rotate(360deg);
+            transform: rotate(-360deg) translate(-280px) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes aniSaturn {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-390px) rotate(0deg);
+            transform: rotate(0deg) translate(-390px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) translate(-390px) rotate(360deg);
+            transform: rotate(-360deg) translate(-390px) rotate(360deg);
+  }
+}
+
+@keyframes aniSaturn {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-390px) rotate(0deg);
+            transform: rotate(0deg) translate(-390px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) translate(-390px) rotate(360deg);
+            transform: rotate(-360deg) translate(-390px) rotate(360deg);
+  }
+}
+/*# sourceMappingURL=sass.css.map */

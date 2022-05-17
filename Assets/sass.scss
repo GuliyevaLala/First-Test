@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.universe{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darken($color: #2c7ae8, $amount: 45%);
+    .sun{
+        width: 200px;
+        height:200px;
+        box-shadow: -32px -5px 150px 36px rgba(230,95,19,0.82);
+        background: linear-gradient(to right, #bb1604, #f8b304); 
+        border-radius:50%;
+        position:absolute; 
+        animation-name: Anisun; 
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+    .mercury{
+        width: 45px;
+        height: 45px;
+        border-radius:50%;
+        position:absolute;
+        margin: auto;
+        background: linear-gradient(to right, #5614b0, #dbd65c);
+        animation: aniMercury ;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        left: 50%;
+        top: 50%; 
+        box-shadow: -32px -5px 150px 6px rgba(230,95,19,0.82);
+
+    }
+    .venus{
+        width: 65px;
+        height: 65px;
+        border-radius:50%;
+        position:absolute; 
+        margin: auto;
+        background: linear-gradient(to right, #29e0d7, #78ffd6);
+        animation: aniVenus ;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        box-shadow: -32px -5px 150px 6px #b4eae7;
+
+     }
+    
+     .earth{
+        width: 90px;
+        height: 90px;
+        border-radius:50%;
+        margin: auto;
+        position:absolute;
+        background: linear-gradient(to right, #55d370, #0575e6); 
+        animation: aniEarth ;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        box-shadow: -32px -5px 150px 6px rgba(55, 250, 198, 0.981);
+
+     }
+     .saturn{
+        width: 120px;
+        height: 120px;
+        border-radius:50%;
+        margin: auto;
+        position:absolute;
+        background: linear-gradient(to right, #9c5f14, #585237); 
+        animation: aniSaturn ;
+        animation-duration: 11s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        box-shadow: -32px -5px 150px 6px rgba(226, 218, 62, 0.981);
+
+     }
+    }
+
+    @keyframes Anisun{
+
+        from{
+            transform: rotate(0deg);
+    
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes aniMercury{
+        0%{
+          transform:rotate(0deg)
+                    translateX(-180px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(360deg)
+                    translateX(-180px)
+                    rotate(-360deg);
+        }
+      }
+      @keyframes aniVenus{
+        0%{
+          transform:rotate(0deg)
+                    translateX(-225px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(360deg)
+                    translateX(-225px)
+                    rotate(-360deg);
+        }
+      }
+      @keyframes aniEarth{
+        0%{
+          transform:rotate(0deg)
+                    translate(-280px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(-360deg)
+                    translate(-280px)
+                    rotate(360deg);
+        }
+      }     
+       @keyframes aniSaturn{
+        0%{
+          transform:rotate(0deg)
+                    translate(-390px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(-360deg)
+                    translate(-390px)
+                    rotate(360deg);
+        }
+      }
